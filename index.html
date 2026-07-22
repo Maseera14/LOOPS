@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOOPS | Next-Gen Software House</title>
+  <meta name="description" content="LOOPS builds scalable software, modern web architectures, and seamless digital experiences." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.png?v=2" type="image/png" />
+  <script>
+    try { if (localStorage.getItem('loops-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  </script>
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="LOOPS home">
+        <img src="assets/logo.png?v=2" alt="LOOPS" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-cta">
+        <form class="nav-search" role="search" action="insights.html" method="get">
+          <label class="visually-hidden" for="site-search">Search</label>
+          <input id="site-search" type="search" name="q" placeholder="Search..." autocomplete="off" />
+        </form>
+        <a class="btn btn-ghost" href="contact.html">Start a Project</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color mode" title="Toggle light / dark">
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-orbs" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="brand-mark anim-item" data-delay="0">LOOPS</p>
+          <h1 class="hero-title" aria-label="Engineering Next-Generation Digital Solutions.">
+            <span class="line"><span class="word">Engineering</span></span>
+            <span class="line"><span class="word">Next-Generation</span></span>
+            <span class="line"><span class="word">Digital</span> <span class="word accent">Solutions.</span></span>
+          </h1>
+          <p class="lead anim-item" data-delay="520">
+            We build scalable software, modern web architectures, and seamless digital experiences.
+          </p>
+          <div class="hero-actions anim-item" data-delay="640">
+            <a class="btn btn-primary" href="what-we-do.html">Explore Services</a>
+            <a class="btn btn-ghost" href="contact.html">Talk to Us</a>
+          </div>
+        </div>
+
+        <div class="hero-visual anim-item" data-delay="280" data-float>
+          <div class="hero-glow" aria-hidden="true"></div>
+          <video
+            class="hero-video"
+            src="assets/loops-header.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/hero-home.png"
+            aria-label="LOOPS product showcase video"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-intro">
+      <div class="intro-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="intro-layout">
+          <aside class="intro-side reveal-intro" data-intro="0">
+            <p class="intro-eyebrow">Who We Are</p>
+            <div class="intro-side-line" aria-hidden="true"></div>
+            <p class="intro-side-note">Engineering × Design</p>
+          </aside>
+
+          <div class="intro-main reveal-intro" data-intro="1">
+            <h2 class="intro-title">
+              Technology moves fast, but your systems should move
+              <span class="gradient-text">faster</span>.
+            </h2>
+            <div class="intro-line" aria-hidden="true"></div>
+
+            <p class="intro-lead">
+              LOOPS bridges the gap between complex software engineering and high-end visual design.
+              We create seamless web applications, custom platforms, and cloud systems that look stunning
+              and perform impeccably under pressure.
+            </p>
+
+            <div class="intro-split">
+              <p>
+                From first prototype to production scale, every build is shaped with precision —
+                clean architecture, refined interfaces, and infrastructure that stays calm when traffic spikes.
+              </p>
+              <p>
+                We don’t just ship features. We engineer digital products that feel inevitable: fast, elegant,
+                and built to grow with you — the rare mix of technical depth and design craft.
+              </p>
+            </div>
+
+            <p class="intro-close">
+              Whether you’re launching a new platform or modernizing a core system,
+              <em>LOOPS turns ambitious ideas into reliable software.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-stats">
+      <div class="container">
+        <div class="section-head reveal section-head-center">
+          <h2>Journey Of <span class="gradient-text">Excellence</span></h2>
+          <p>Numbers that reflect how we build, ship, and scale with our partners.</p>
+        </div>
+        <div class="stats-row reveal">
+          <div class="stat">
+            <p class="stat-number"><span class="count-up" data-target="12">0</span>+</p>
+            <p class="stat-label">Years Consecutive YoY Growth</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number"><span class="count-up" data-target="140">0</span>+</p>
+            <p class="stat-label">Countries</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number"><span class="count-up" data-target="150">0</span>+</p>
+            <p class="stat-label">Professionals at Work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-pillars">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Core Pillars</h2>
+          <p>Precision engineering, modern architecture, and experiences built to scale.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal" data-stagger="0">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Performance</h3>
+            <p>Lean systems engineered for speed, reliability, and measurable impact under real load.</p>
+          </article>
+          <article class="card reveal" data-stagger="1">
+            <div class="card-icon" aria-hidden="true">◈</div>
+            <h3>Scalability</h3>
+            <p>Architectures that grow with your product — from first release to enterprise volume.</p>
+          </article>
+          <article class="card reveal" data-stagger="2">
+            <div class="card-icon" aria-hidden="true">◎</div>
+            <h3>User-Centric Tech</h3>
+            <p>Interfaces and flows designed around clarity, so complex products feel effortless.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured Projects</h2>
+          <p>A continuous line of builds — interfaces, platforms, and systems in motion.</p>
+        </div>
+      </div>
+      <div class="projects-marquee reveal" aria-label="Featured projects scrolling">
+        <div class="marquee-track">
+          <article class="project-chip">
+            <img src="assets/service-software.png" alt="" />
+            <div>
+              <h3>Nova API Platform</h3>
+              <p>Custom Software</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-web-mobile.png" alt="" />
+            <div>
+              <h3>Pulse Mobile Suite</h3>
+              <p>Web &amp; Mobile</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-uiux.png" alt="" />
+            <div>
+              <h3>Orbit Design System</h3>
+              <p>UI/UX Strategy</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-cloud.png" alt="" />
+            <div>
+              <h3>Aether Cloud Ops</h3>
+              <p>Cloud &amp; DevOps</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-ai.png" alt="" />
+            <div>
+              <h3>Vertex Analytics</h3>
+              <p>Data Product</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-mobile.png" alt="" />
+            <div>
+              <h3>Lumen Commerce</h3>
+              <p>E-commerce OS</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/service-cloud.png" alt="" />
+            <div>
+              <h3>Signal Hub</h3>
+              <p>Realtime Systems</p>
+            </div>
+          </article>
+          <article class="project-chip">
+            <img src="assets/hero-home.png" alt="" />
+            <div>
+              <h3>Forge Dashboard</h3>
+              <p>Product UI</p>
+            </div>
+          </article>
+
+          <!-- duplicate for seamless loop -->
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-software.png" alt="" />
+            <div>
+              <h3>Nova API Platform</h3>
+              <p>Custom Software</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-web-mobile.png" alt="" />
+            <div>
+              <h3>Pulse Mobile Suite</h3>
+              <p>Web &amp; Mobile</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-uiux.png" alt="" />
+            <div>
+              <h3>Orbit Design System</h3>
+              <p>UI/UX Strategy</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-cloud.png" alt="" />
+            <div>
+              <h3>Aether Cloud Ops</h3>
+              <p>Cloud &amp; DevOps</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-ai.png" alt="" />
+            <div>
+              <h3>Vertex Analytics</h3>
+              <p>Data Product</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-mobile.png" alt="" />
+            <div>
+              <h3>Lumen Commerce</h3>
+              <p>E-commerce OS</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/service-cloud.png" alt="" />
+            <div>
+              <h3>Signal Hub</h3>
+              <p>Realtime Systems</p>
+            </div>
+          </article>
+          <article class="project-chip" aria-hidden="true">
+            <img src="assets/hero-home.png" alt="" />
+            <div>
+              <h3>Forge Dashboard</h3>
+              <p>Product UI</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="brand-mark" style="margin-bottom: 0.5rem;">Our Services</p>
+          <h2>Transform Your <span class="gradient-text">Business</span></h2>
+          <p>High-impact capabilities in a fast AI-speed loop — hover to pause.</p>
+        </div>
+      </div>
+      <div class="services-marquee reveal" aria-label="Services scrolling line">
+        <div class="services-track">
+          <article class="service-tile" style="--img: url('assets/service-ai.png')">
+            <h3>Generative AI</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-erp.png')">
+            <h3>Dynamics 365 ERP</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-mobile.png')">
+            <h3>Mobile App Development</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-staff.png')">
+            <h3>Staff Augmentation</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-software.png')">
+            <h3>Custom Software</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-cloud.png')">
+            <h3>Cloud &amp; DevOps</h3>
+          </article>
+
+          <!-- duplicate for seamless AI-speed loop -->
+          <article class="service-tile" style="--img: url('assets/service-ai.png')" aria-hidden="true">
+            <h3>Generative AI</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-erp.png')" aria-hidden="true">
+            <h3>Dynamics 365 ERP</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-mobile.png')" aria-hidden="true">
+            <h3>Mobile App Development</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-staff.png')" aria-hidden="true">
+            <h3>Staff Augmentation</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-software.png')" aria-hidden="true">
+            <h3>Custom Software</h3>
+          </article>
+          <article class="service-tile" style="--img: url('assets/service-cloud.png')" aria-hidden="true">
+            <h3>Cloud &amp; DevOps</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-stack">
+      <div class="container">
+        <div class="section-head reveal section-head-center">
+          <h2>Tech Stack <span class="gradient-text">Loop</span></h2>
+          <p>Core tools we ship with — scrolling, interactive, never a boring list.</p>
+        </div>
+      </div>
+
+      <div class="stack-loop reveal" data-group="Frontend">
+        <div class="stack-label">Frontend</div>
+        <div class="stack-marquee">
+          <div class="stack-track">
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">Next.js</span>
+            <span class="stack-pill">TypeScript</span>
+            <span class="stack-pill">Tailwind CSS</span>
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">Next.js</span>
+            <span class="stack-pill">TypeScript</span>
+            <span class="stack-pill">Tailwind CSS</span>
+            <span class="stack-pill" aria-hidden="true">React</span>
+            <span class="stack-pill" aria-hidden="true">Next.js</span>
+            <span class="stack-pill" aria-hidden="true">TypeScript</span>
+            <span class="stack-pill" aria-hidden="true">Tailwind CSS</span>
+            <span class="stack-pill" aria-hidden="true">React</span>
+            <span class="stack-pill" aria-hidden="true">Next.js</span>
+            <span class="stack-pill" aria-hidden="true">TypeScript</span>
+            <span class="stack-pill" aria-hidden="true">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-loop reverse reveal" data-group="Backend">
+        <div class="stack-label">Backend</div>
+        <div class="stack-marquee">
+          <div class="stack-track">
+            <span class="stack-pill">Node.js</span>
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">GraphQL</span>
+            <span class="stack-pill">Node.js</span>
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">GraphQL</span>
+            <span class="stack-pill" aria-hidden="true">Node.js</span>
+            <span class="stack-pill" aria-hidden="true">Python</span>
+            <span class="stack-pill" aria-hidden="true">PostgreSQL</span>
+            <span class="stack-pill" aria-hidden="true">GraphQL</span>
+            <span class="stack-pill" aria-hidden="true">Node.js</span>
+            <span class="stack-pill" aria-hidden="true">Python</span>
+            <span class="stack-pill" aria-hidden="true">PostgreSQL</span>
+            <span class="stack-pill" aria-hidden="true">GraphQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-loop reveal" data-group="Cloud">
+        <div class="stack-label">Cloud &amp; DevOps</div>
+        <div class="stack-marquee">
+          <div class="stack-track">
+            <span class="stack-pill">AWS</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Kubernetes</span>
+            <span class="stack-pill">Vercel</span>
+            <span class="stack-pill">AWS</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Kubernetes</span>
+            <span class="stack-pill">Vercel</span>
+            <span class="stack-pill" aria-hidden="true">AWS</span>
+            <span class="stack-pill" aria-hidden="true">Docker</span>
+            <span class="stack-pill" aria-hidden="true">Kubernetes</span>
+            <span class="stack-pill" aria-hidden="true">Vercel</span>
+            <span class="stack-pill" aria-hidden="true">AWS</span>
+            <span class="stack-pill" aria-hidden="true">Docker</span>
+            <span class="stack-pill" aria-hidden="true">Kubernetes</span>
+            <span class="stack-pill" aria-hidden="true">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-trust">
+      <div class="container">
+        <div class="section-head reveal section-head-center">
+          <h2>Client Trust</h2>
+          <p>What partners say when the platform finally feels inevitable.</p>
+        </div>
+        <blockquote class="quote-card reveal">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p>
+            Loops transformed our entire core platform into an ultra-fast, modern web application.
+            Their eye for sleek design combined with deep technical precision is rare.
+          </p>
+          <footer>
+            <span class="quote-dot" aria-hidden="true"></span>
+            <cite>Trusted Client Partner</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section home-cta">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Ready to build what’s next?</h2>
+            <p>Let’s shape a product that feels inevitable — precise, scalable, and distinctly yours.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Start a Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png?v=2" alt="LOOPS" />
+          <p>LOOPS | Next-Gen Software House</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:Infoloops.tech@gmail.com">Infoloops.tech@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <a href="https://www.instagram.com/loops.technology/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 LOOPS. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

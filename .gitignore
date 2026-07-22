@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Temp / logs
+*.log
+*.tmp
+__pycache__/
+.Python
+
+# Local checks
+assets/_logo-check.png
+assets/_remove_bg.py
+assets/_clean_logo.py

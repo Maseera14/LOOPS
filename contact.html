@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | LOOPS</title>
+  <meta name="description" content="Contact LOOPS — Infoloops.tech@gmail.com. Start your next digital project." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.png?v=2" type="image/png" />
+  <script>
+    try { if (localStorage.getItem('loops-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="LOOPS home">
+        <img src="assets/logo.png?v=2" alt="LOOPS" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <div class="nav-cta">
+        <form class="nav-search" role="search" action="insights.html" method="get">
+          <label class="visually-hidden" for="site-search">Search</label>
+          <input id="site-search" type="search" name="q" placeholder="Search..." autocomplete="off" />
+        </form>
+        <a class="btn btn-ghost" href="contact.html">Start a Project</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color mode" title="Toggle light / dark">
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="brand-mark">Contact Us</p>
+        <h1>Let’s build what’s next.</h1>
+        <p class="lead">Tell us about your product, challenge, or idea — we’ll respond with clear next steps.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container contact-layout">
+        <form class="contact-form reveal" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What are you building?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-info reveal">
+          <h2>Direct contact</h2>
+          <p class="lead">Prefer email? Reach the team directly — no forms required.</p>
+          <div class="info-item">
+            <span>Email</span>
+            <a href="mailto:Infoloops.tech@gmail.com">Infoloops.tech@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span>Socials</span>
+            <p><a href="https://www.instagram.com/loops.technology/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="#">LinkedIn</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png?v=2" alt="LOOPS" />
+          <p>LOOPS | Next-Gen Software House</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:Infoloops.tech@gmail.com">Infoloops.tech@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <a href="https://www.instagram.com/loops.technology/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 LOOPS. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
