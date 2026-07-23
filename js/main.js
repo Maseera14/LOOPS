@@ -122,28 +122,45 @@ document.addEventListener('DOMContentLoaded', () => {
     reveals.forEach((el) => el.classList.add('visible'));
   }
 
-  /* Who We Are intro animation */
+  /* Who We Are — sequential scroll reveal & spotlight */
   const introSection = document.querySelector('.home-intro');
   if (introSection) {
-    const showIntro = () => introSection.classList.add('is-visible');
+    const steps = introSection.querySelectorAll('.reveal-step');
 
     if ('IntersectionObserver' in window && !prefersReduced) {
       const introIo = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              showIntro();
+              introSection.classList.add('is-visible');
+              // Fire each step one-by-one with real delays
+              steps.forEach((step, i) => {
+                const delay = i === 0 ? 100 : 100 + i * 420;
+                window.setTimeout(() => {
+                  step.classList.add('is-in');
+                }, delay);
+              });
               introIo.disconnect();
             }
           });
         },
-        { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+        { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
       );
       introIo.observe(introSection);
-      // safety: never leave blank
-      window.setTimeout(showIntro, 1200);
     } else {
-      showIntro();
+      introSection.classList.add('is-visible');
+      steps.forEach((s) => s.classList.add('is-in'));
+    }
+
+    const spotlightCard = introSection.querySelector('[data-spotlight]');
+    if (spotlightCard && !prefersReduced) {
+      spotlightCard.addEventListener('mousemove', (e) => {
+        const rect = spotlightCard.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        spotlightCard.style.setProperty('--mouse-x', `${x}px`);
+        spotlightCard.style.setProperty('--mouse-y', `${y}px`);
+      });
     }
   }
 

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LOOPS | Next-Gen Software House</title>
-  <meta name="description" content="LOOPS builds scalable software, modern web architectures, and seamless digital experiences." />
-  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <meta name="description"
+    content="LOOPS builds scalable software, modern web architectures, and seamless digital experiences." />
+  <link rel="stylesheet" href="css/styles.css?v=7" />
   <link rel="icon" href="assets/logo.png?v=2" type="image/png" />
   <script>
-    try { if (localStorage.getItem('loops-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+    try { if (localStorage.getItem('loops-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) { }
   </script>
 </head>
+
 <body class="page-home">
   <header class="site-header">
     <div class="nav-inner">
@@ -31,10 +34,18 @@
         <a class="btn btn-ghost" href="contact.html">Start a Project</a>
         <button class="theme-toggle" type="button" aria-label="Switch color mode" title="Toggle light / dark">
           <span class="theme-icon theme-icon-moon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2"
+                stroke-linejoin="round" />
+            </svg>
           </span>
           <span class="theme-icon theme-icon-sun" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
           </span>
         </button>
       </div>
@@ -71,53 +82,59 @@
 
         <div class="hero-visual anim-item" data-delay="280" data-float>
           <div class="hero-glow" aria-hidden="true"></div>
-          <video
-            class="hero-video"
-            src="assets/loops-header.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="assets/hero-home.png"
-            aria-label="LOOPS product showcase video"
-          ></video>
+          <div class="hero-video-wrapper">
+            <video
+              class="hero-video"
+              src="assets/loops-header.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="assets/hero-home.png"
+              aria-label="LOOPS product showcase video"
+            ></video>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section home-intro">
-      <div class="intro-glow" aria-hidden="true"></div>
+      <div class="intro-glow intro-glow-primary" aria-hidden="true"></div>
+      <div class="intro-glow intro-glow-secondary" aria-hidden="true"></div>
+      <div class="intro-bg-grid" aria-hidden="true"></div>
+
       <div class="container">
         <div class="intro-layout">
-          <aside class="intro-side reveal-intro" data-intro="0">
-            <p class="intro-eyebrow">Who We Are</p>
-            <div class="intro-side-line" aria-hidden="true"></div>
-            <p class="intro-side-note">Engineering × Design</p>
+          <aside class="intro-side reveal-step step-1">
+            <div class="intro-badge">
+              <span class="pulse-dot"></span>
+            </div>
+            <h3 class="intro-eyebrow">Who We Are</h3>
+            <div class="intro-side-line" aria-hidden="true">
+              <span class="laser-beam"></span>
+            </div>
+            <div class="intro-side-note">
+              <span class="tech-chip">ENGINEERING <span class="chip-x">×</span> DESIGN</span>
+            </div>
           </aside>
 
-          <div class="intro-main reveal-intro" data-intro="1">
-            <h2 class="intro-title">
-              Technology moves fast, but your systems should move
-              <span class="gradient-text">faster</span>.
-            </h2>
-            <div class="intro-line" aria-hidden="true"></div>
+          <div class="intro-main reveal-step step-2" data-spotlight>
+            <div class="spotlight-layer" aria-hidden="true"></div>
 
-            <p class="intro-lead">
-              LOOPS bridges the gap between complex software engineering and high-end visual design.
+            <h2 class="intro-title reveal-step step-3">
+              Technology moves fast, but your systems should move
+              <span class="gradient-text gradient-shimmer">faster</span>.
+            </h2>
+            <div class="intro-line reveal-step step-4" aria-hidden="true">
+              <span class="intro-line-glow"></span>
+            </div>
+
+            <p class="intro-lead reveal-step step-5">
+              <strong class="highlight-brand">LOOPS</strong> bridges the gap between
+              <span class="highlight-text">complex software engineering</span> and
+              <span class="highlight-text">high-end visual design</span>.
               We create seamless web applications, custom platforms, and cloud systems that look stunning
               and perform impeccably under pressure.
-            </p>
-
-            <p class="intro-body">
-              From first prototype to production scale, every build is shaped with precision —
-              clean architecture, refined interfaces, and infrastructure that stays calm when traffic spikes.
-              We don’t just ship features. We engineer digital products that feel inevitable: fast, elegant,
-              and built to grow with you — the rare mix of technical depth and design craft.
-            </p>
-
-            <p class="intro-close">
-              Whether you’re launching a new platform or modernizing a core system,
-              <em>LOOPS turns ambitious ideas into reliable software.</em>
             </p>
           </div>
         </div>
@@ -183,42 +200,42 @@
       </div>
       <div class="services-marquee reveal" aria-label="Services scrolling line">
         <div class="services-track">
-          <article class="service-tile" style="--img: url('assets/service-ai.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=640&q=80&fit=crop')">
             <h3>Generative AI</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-erp.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&q=80&fit=crop')">
             <h3>Dynamics 365 ERP</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-mobile.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=640&q=80&fit=crop')">
             <h3>Mobile App Development</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-staff.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&q=80&fit=crop')">
             <h3>Staff Augmentation</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-software.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=640&q=80&fit=crop')">
             <h3>Custom Software</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-cloud.png')">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&q=80&fit=crop')">
             <h3>Cloud &amp; DevOps</h3>
           </article>
 
           <!-- duplicate for seamless AI-speed loop -->
-          <article class="service-tile" style="--img: url('assets/service-ai.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Generative AI</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-erp.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Dynamics 365 ERP</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-mobile.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Mobile App Development</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-staff.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Staff Augmentation</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-software.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Custom Software</h3>
           </article>
-          <article class="service-tile" style="--img: url('assets/service-cloud.png')" aria-hidden="true">
+          <article class="service-tile" style="--img: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&q=80&fit=crop')" aria-hidden="true">
             <h3>Cloud &amp; DevOps</h3>
           </article>
         </div>
@@ -371,6 +388,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
+
 </html>
