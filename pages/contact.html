@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insights | LOOPS</title>
-  <meta name="description" content="Ideas on software architecture, product craft, and modern engineering from LOOPS." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="assets/logo.png?v=2" type="image/png" />
+  <title>Contact Us | LOOPS</title>
+  <meta name="description" content="Contact LOOPS — Infoloops.tech@gmail.com. Start your next digital project." />
+  <link rel="stylesheet" href="../css/styles.css?v=7" />
+  <link rel="icon" href="../assets/logo.png?v=2" type="image/png" />
   <script>
     try { if (localStorage.getItem('loops-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
   </script>
@@ -14,14 +14,14 @@
 <body>
   <header class="site-header">
     <div class="nav-inner">
-      <a class="logo" href="index.html" aria-label="LOOPS home">
-        <img src="assets/logo.png?v=2" alt="LOOPS" />
+      <a class="logo" href="../index.html" aria-label="LOOPS home">
+        <img src="../assets/logo.png?v=2" alt="LOOPS" />
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="what-we-do.html">What We Do</a>
-        <a href="insights.html" class="active">Insights</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html" class="active">Contact Us</a>
       </nav>
       <div class="nav-cta">
         <form class="nav-search" role="search" action="insights.html" method="get">
@@ -47,43 +47,42 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="brand-mark">Insights</p>
-        <h1>Signals from the edge of modern software.</h1>
-        <p class="lead">Short reads on architecture, product craft, and the systems behind next-gen experiences.</p>
+        <p class="brand-mark">Contact Us</p>
+        <h1>Let’s build what’s next.</h1>
+        <p class="lead">Tell us about your product, challenge, or idea — we’ll respond with clear next steps.</p>
       </div>
     </section>
 
     <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="insight-grid">
-          <article class="insight-card reveal">
-            <div class="insight-media" aria-hidden="true"></div>
-            <div class="body">
-              <p class="insight-meta">Architecture</p>
-              <h3>Designing systems that stay calm under growth</h3>
-              <p>How we approach scalable foundations without overbuilding day one.</p>
-              <span class="read">Read insight →</span>
-            </div>
-          </article>
-          <article class="insight-card reveal">
-            <div class="insight-media media-b" aria-hidden="true"></div>
-            <div class="body">
-              <p class="insight-meta">Product</p>
-              <h3>Interface clarity as a competitive advantage</h3>
-              <p>Why restrained UI and intentional motion create trust at first glance.</p>
-              <span class="read">Read insight →</span>
-            </div>
-          </article>
-          <article class="insight-card reveal">
-            <div class="insight-media media-c" aria-hidden="true"></div>
-            <div class="body">
-              <p class="insight-meta">Engineering</p>
-              <h3>Shipping faster with disciplined DevOps loops</h3>
-              <p>Practical patterns for continuous delivery that don’t trade away stability.</p>
-              <span class="read">Read insight →</span>
-            </div>
-          </article>
-        </div>
+      <div class="container contact-layout">
+        <form class="contact-form reveal" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What are you building?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-info reveal">
+          <h2>Direct contact</h2>
+          <p class="lead">Prefer email? Reach the team directly — no forms required.</p>
+          <div class="info-item">
+            <span>Email</span>
+            <a href="mailto:Infoloops.tech@gmail.com">Infoloops.tech@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span>Socials</span>
+            <p><a href="https://www.instagram.com/loops.technology/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="#">LinkedIn</a></p>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
@@ -92,7 +91,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/logo.png?v=2" alt="LOOPS" />
+          <img src="../assets/logo.png?v=2" alt="LOOPS" />
           <p>LOOPS | Next-Gen Software House</p>
         </div>
         <div class="footer-col">
@@ -120,6 +119,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="../js/main.js?v=5"></script>
 </body>
 </html>
